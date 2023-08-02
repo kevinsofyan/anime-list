@@ -6,7 +6,7 @@ import "./login.scss";
 function Login() {
 	const [count, setCount] = useState(0);
 	useEffect(() => {
-		localStorage.setItem("token", "asdasdasd");
+		//localStorage.setItem("token", "asdasdasd");
 	}, []);
 	return (
 		<>
