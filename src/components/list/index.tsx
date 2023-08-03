@@ -16,16 +16,6 @@ import { IAnimeListParams } from "../../services/animeServices";
 import { NavLink } from "react-router-dom";
 import { IAnimeList } from "../../models/anime";
 
-const data = Array.from({ length: 23 }).map((_, i) => ({
-	href: "https://ant.design",
-	title: `ant design part ${i}`,
-	avatar: `https://xsgames.co/randomusers/avatar.php?g=pixel&key=${i}`,
-	description:
-		"Ant Design, a design language for background applications, is refined by Ant UED Team.",
-	content:
-		"We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.",
-}));
-
 const IconText = ({ icon, text }: { icon: React.FC; text: string }) => (
 	<Space>
 		{React.createElement(icon)}

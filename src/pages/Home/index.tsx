@@ -107,6 +107,7 @@ function Home() {
 					<InputSearch
 						placeholder="Search anime name"
 						onChange={handleSearchChange}
+						allowClear
 					/>
 				</Col>
 				<Col md={4} sm={24}>

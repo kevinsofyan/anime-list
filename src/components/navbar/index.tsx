@@ -1,30 +1,36 @@
-import { Breadcrumb, Layout, Menu, MenuProps, theme } from "antd";
+import { Button, Col, Layout, Row } from "antd";
+import { useNavigate } from "react-router-dom";
 
 const Navbar: React.FC = () => {
-	const items1: MenuProps["items"] = ["1", "2", "3"].map((key) => ({
-		key,
-		label: `nav ${key}`,
-	}));
+	let navigate = useNavigate();
+
+	const handleLogout = () => {
+		localStorage.removeItem("token");
+		navigate("/login");
+	};
 
 	return (
-		<Layout.Header
-			style={{
-				position: "sticky",
-				top: 0,
-				zIndex: 1,
-				width: "100%",
-				display: "flex",
-				alignItems: "center",
-			}}
-		>
-			<div className="demo-logo" />
-			<Menu
-				theme="dark"
-				mode="horizontal"
-				defaultSelectedKeys={["2"]}
-				items={items1}
-			/>
-		</Layout.Header>
+		<div className="navbar">
+			<Layout.Header
+				className="container"
+				style={{
+					position: "sticky",
+					top: 0,
+					zIndex: 1,
+					width: "100%",
+					display: "flex",
+					alignItems: "center",
+				}}
+			>
+				<Row justify="end">
+					<Col span={1}>
+						<Button ghost onClick={handleLogout}>
+							Logout
+						</Button>
+					</Col>
+				</Row>
+			</Layout.Header>
+		</div>
 	);
 };
 

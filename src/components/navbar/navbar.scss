@@ -1,0 +1,13 @@
+.navbar {
+	&__container {
+		position: "sticky";
+		top: 0;
+		z-index: 1;
+		width: "100%";
+		display: "flex";
+		text-align: "center";
+		ul {
+			float: right;
+		}
+	}
+}
