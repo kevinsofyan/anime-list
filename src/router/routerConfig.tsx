@@ -15,6 +15,7 @@ import Content from "../components/mainContent";
 import MainContent from "../components/mainContent";
 import { Footer } from "antd/es/layout/layout";
 import SideArea from "../components/sideArea";
+import Detail from "../pages/Detail";
 
 export type CustomRouterConfig = RouteObject & {
 	isProtected?: boolean;
@@ -34,6 +35,11 @@ const routes: CustomRouterConfig[] = [
 		element: <Home />,
 	},
 	{
+		path: "/details/:id?",
+		isProtected: true,
+		element: <Detail />,
+	},
+	{
 		path: "*", // This is the 404 route
 		element: <NotFound />,
 	},
@@ -47,15 +53,12 @@ const PrivateRouter: React.FC<CustomRouterConfig> = ({ element }) => {
 	}
 
 	return (
-		<Layout hasSider>
-			<SideArea />
-			<Layout className="site-layout" style={{ marginLeft: 200 }}>
-				<Navbar />
-				<MainContent element={element} />
-				<Footer style={{ textAlign: "center" }}>
-					Ant Design ©2023 Created by Ant UED
-				</Footer>
-			</Layout>
+		<Layout className="site-layout">
+			<Navbar />
+			<MainContent element={element} />
+			<Footer style={{ textAlign: "center" }}>
+				Ant Design ©2023 Created by Ant UED
+			</Footer>
 		</Layout>
 	);
 };
