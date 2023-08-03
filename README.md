@@ -41,6 +41,18 @@ npm test
 
 ```
 
+## Login
+
+for testing purposes you can login using this information
+
+```bash
+{
+	username: "admin",
+	password: "asdQWE123!"
+}
+
+```
+
 ## Features
 
 -   Browse and search for anime titles
