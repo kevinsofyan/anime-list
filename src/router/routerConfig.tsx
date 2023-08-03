@@ -1,20 +1,12 @@
-import {
-	Navigate,
-	RouteObject,
-	useLocation,
-	useNavigate,
-} from "react-router-dom";
+import { Navigate, RouteObject } from "react-router-dom";
 
 import Home from "../pages/Home";
 import Login from "../pages/Login";
 import NotFound from "../pages/NotFound";
-import useAuth from "../hooks/useAuth";
 import { Layout } from "antd";
 import Navbar from "../components/navbar";
-import Content from "../components/mainContent";
 import MainContent from "../components/mainContent";
 import { Footer } from "antd/es/layout/layout";
-import SideArea from "../components/sideArea";
 import Detail from "../pages/Detail";
 
 export type CustomRouterConfig = RouteObject & {
@@ -56,9 +48,7 @@ const PrivateRouter: React.FC<CustomRouterConfig> = ({ element }) => {
 		<Layout className="site-layout">
 			<Navbar />
 			<MainContent element={element} />
-			<Footer style={{ textAlign: "center" }}>
-				Ant Design ©2023 Created by Ant UED
-			</Footer>
+			<Footer style={{ textAlign: "center" }}>Kevin Sofyan ©2023</Footer>
 		</Layout>
 	);
 };

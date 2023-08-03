@@ -1,14 +1,5 @@
 import { useEffect, useState } from "react";
-import {
-	Alert,
-	Col,
-	Divider,
-	Grid,
-	PaginationProps,
-	Row,
-	Spin,
-	Switch,
-} from "antd";
+import { Col, Divider, Row, Spin, Switch } from "antd";
 import { debounce } from "lodash";
 
 import animeServices, { IAnimeListParams } from "../../services/animeServices";
@@ -16,8 +7,8 @@ import { ApiResponse } from "../../services/service";
 import InputSearch from "../../components/InputSearch";
 import List from "../../components/list";
 import "./home.scss";
-import { Link, NavLink } from "react-router-dom";
 import InputDropdown from "../../components/inputDropdown";
+import { IAnimeList } from "../../models/anime";
 
 const filterType = [
 	{

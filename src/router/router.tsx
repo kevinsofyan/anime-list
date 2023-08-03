@@ -1,5 +1,6 @@
 import React from "react";
-import { Route, Routes, Navigate, useLocation } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
+
 import { routes, PrivateRouter } from "./routerConfig";
 import NotFound from "../pages/NotFound";
 

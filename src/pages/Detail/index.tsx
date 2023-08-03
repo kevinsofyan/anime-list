@@ -13,6 +13,7 @@ import {
 	Spin,
 } from "antd";
 const { Title, Text } = Typography;
+
 import "./detail.scss";
 import { NavLink, useParams } from "react-router-dom";
 import { ApiResponse } from "../../services/service";
@@ -23,14 +24,7 @@ function Detail() {
 	let { id } = useParams();
 	const [detailData, setDetailData] = useState<IAnimeDetail>();
 	const [isLoading, setIsloading] = useState<boolean>(false);
-	const anime = {
-		episodes: [
-			{
-				title: "asd",
-				duration: 2,
-			},
-		],
-	};
+
 	useEffect(() => {
 		handleFetch();
 	}, [id]);

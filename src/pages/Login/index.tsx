@@ -21,7 +21,7 @@ interface LoginFormValues {
 
 type NotificationType = "success" | "info" | "warning" | "error";
 
-const Login: React.FC = () => {
+const Login: React.FC<any> = () => {
 	const token = localStorage.getItem("token");
 	let navigate = useNavigate();
 	const [api, contextHolder] = notification.useNotification();

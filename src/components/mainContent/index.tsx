@@ -1,11 +1,5 @@
 import React, { ReactNode } from "react";
-import { Link } from "react-router-dom";
-import {
-	LaptopOutlined,
-	NotificationOutlined,
-	UserOutlined,
-} from "@ant-design/icons";
-import { Breadcrumb, Layout, Menu, MenuProps, theme } from "antd";
+import { Layout, theme } from "antd";
 
 interface ContentProps {
 	element: ReactNode;

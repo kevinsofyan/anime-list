@@ -11,17 +11,7 @@ const Navbar: React.FC = () => {
 
 	return (
 		<div className="navbar">
-			<Layout.Header
-				className="container"
-				style={{
-					position: "sticky",
-					top: 0,
-					zIndex: 1,
-					width: "100%",
-					display: "flex",
-					alignItems: "center",
-				}}
-			>
+			<Layout.Header className="container">
 				<Row justify="end">
 					<Col span={1}>
 						<Button ghost onClick={handleLogout}>

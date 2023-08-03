@@ -1,15 +1,6 @@
 import React from "react";
-import { LikeOutlined, MessageOutlined, StarOutlined } from "@ant-design/icons";
-import {
-	Avatar,
-	List as AntdList,
-	Space,
-	Rate,
-	Badge,
-	Row,
-	Col,
-	Divider,
-} from "antd";
+import { LikeOutlined, StarOutlined } from "@ant-design/icons";
+import { List as AntdList, Space, Rate, Badge, Row, Col, Divider } from "antd";
 
 import "./list.scss";
 import { IAnimeListParams } from "../../services/animeServices";

@@ -1,9 +1,4 @@
-import axios, {
-	AxiosError,
-	AxiosInstance,
-	AxiosRequestConfig,
-	AxiosResponse,
-} from "axios";
+import axios, { AxiosError } from "axios";
 
 // Interface for the response data you expect from the API
 export interface ApiResponse<T = any> {
