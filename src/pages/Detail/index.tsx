@@ -88,21 +88,21 @@ function Detail() {
 						<Text>{detailData?.synopsis}</Text>
 						<Divider />
 						<Row gutter={[16, 20]}>
-							<Col md={8} sm={24}>
+							<Col md={8} sm={24} xs={24}>
 								<Card>
 									<Text strong>Anime Type</Text>
 									<br />
 									<Text>{detailData?.type}</Text>
 								</Card>
 							</Col>
-							<Col md={8} sm={24}>
+							<Col md={8} sm={24} xs={24}>
 								<Card>
 									<Text strong>Status</Text>
 									<br />
 									<Text>{detailData?.status}</Text>
 								</Card>
 							</Col>
-							<Col md={8} sm={24}>
+							<Col md={8} sm={24} xs={24}>
 								<Card>
 									<Text strong>Rating</Text> <br />
 									<Rate allowHalf value={detailData?.score} />

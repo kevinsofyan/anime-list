@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
 		<div className="navbar">
 			<Layout.Header className="container">
 				<Row justify="end">
-					<Col span={1}>
+					<Col md={1} sm={3}>
 						<Button ghost onClick={handleLogout}>
 							Logout
 						</Button>

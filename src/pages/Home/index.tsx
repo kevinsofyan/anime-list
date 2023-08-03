@@ -94,14 +94,14 @@ function Home() {
 				</Col>
 			</Row>
 			<Row gutter={[16, 20]}>
-				<Col md={12} sm={24}>
+				<Col md={12} sm={24} xs={24}>
 					<InputSearch
 						placeholder="Search anime name"
 						onChange={handleSearchChange}
 						allowClear
 					/>
 				</Col>
-				<Col md={4} sm={24}>
+				<Col md={4} sm={24} xs={24}>
 					<InputDropdown
 						options={filterType}
 						onChange={(e) => {
