@@ -73,7 +73,7 @@ const Login: React.FC<any> = () => {
 				align="middle"
 				style={{ height: "100vh" }}
 			>
-				<Col span={8}>
+				<Col md={10} lg={8} sm={24} xs={24}>
 					<Card title="Login Form" bordered={false}>
 						<Form
 							name="normal_login"
